@@ -6,8 +6,8 @@ export default class Note extends Component<{}> {
     return (
     	<View key={this.props.keyval} style={styles.note}>
 
-        <Text key={this.props.val.date} style={styles.noteText}></Text>
-        <Text key={this.props.val.note} style={styles.noteText}></Text>
+        <Text style={styles.noteText}>{this.props.val.date}</Text>
+        <Text style={styles.noteText}>{this.props.val.note}</Text>
 
         <TouchableOpacity onPress={this.props.deleteMethod} style={styles.noteDelete}>
           <Text style={styles.noteDeleteText}>D</Text>
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#2980b9',
+    backgroundColor: '#4286f4',
     padding: 10,
     top: 10,
     bottom: 10,
